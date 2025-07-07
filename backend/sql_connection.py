@@ -1,12 +1,13 @@
-#connect to mysql server
+import datetime
 import mysql.connector
 
 __cnx = None
 
 def get_sql_connection():
-    global __cnx
-    if __cnx is None:
-        __cnx = mysql.connector.connect(user='root', password='Ginakhalti1@$',
-                                        host='127.0.0.1',
-                                        database='grocery_store')
-        return __cnx
+  print("Opening mysql connection")
+  global __cnx
+
+  if __cnx is None:
+    __cnx = mysql.connector.connect(user='root', password='root', database='grocery_store')
+
+  return __cnx
