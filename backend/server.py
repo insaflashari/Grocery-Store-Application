@@ -1,4 +1,5 @@
-## SERVER
+## SERVER.PY
+
 # Starts a Flask server on port 5000
 # Exposes API endpoints like /getProducts, /insertProduct, /getAllOrders, etc.
 # Accepts HTTP GET and POST requests
