@@ -1,63 +1,66 @@
-Grocery Store App Manager
+# Grocery Store App Manager
+
 A simple web application backend and frontend for managing grocery store products and customer orders.
 
-Overview
+---
+
+## Overview
+
 This project provides a system to manage grocery store operations including:
 
-Adding, deleting, and listing products with unit pricing
+- Adding, deleting, and listing products with unit pricing  
+- Capturing customer orders with detailed order items  
+- Retrieving order histories and details  
+- Web interface for managing products and orders
 
-Capturing customer orders with detailed order items
+---
 
-Retrieving order histories and details
+## Tech Stack
 
-Web interface for managing products and orders
+- **Backend:** Python (Flask or similar framework assumed)  
+- **Database:** SQL (MySQL or compatible, connection via `sql_connection.py`)  
+- **Frontend:** HTML, CSS, JavaScript  
+- **File formats:** Product images and other assets in `/images` folder
 
-Tech Stack
-Backend: Python (Flask or similar framework assumed)
+---
 
-Database: SQL (MySQL or compatible, connection via sql_connection.py)
+## Features
 
-Frontend: HTML, CSS, JavaScript
+- Insert new orders with multiple products and quantities  
+- View all orders with detailed line items  
+- Insert, list, and delete products with unit of measure and price  
+- Responsive web pages to interact with backend APIs  
+- Simple SQL-based data persistence
 
-File formats: Product images and other assets in /images folder
+---
 
-Features
-Insert new orders with multiple products and quantities
+## File Structure
 
-View all orders with detailed line items
-
-Insert, list, and delete products with unit of measure and price
-
-Responsive web pages to interact with backend APIs
-
-Simple SQL-based data persistence
-
-File Structure
-bash
-Copy
-Edit
-/css/                # CSS stylesheets
-/js/                 # JavaScript files
-/images/             # Images used in the website (product photos, UI images)
-/orders_dao.py       # Backend code handling orders database operations
-/products_dao.py     # Backend code handling products database operations
-/sql_connection.py   # Database connection helper
+/css/ # CSS stylesheets
+/js/ # JavaScript files
+/images/ # Images used in the website (product photos, UI images)
+/orders_dao.py # Backend code handling orders database operations
+/products_dao.py # Backend code handling products database operations
+/sql_connection.py # Database connection helper
 /manage-product.html # Product management web page
-/order.html          # Order viewing and creation web page
-/index.html          # Homepage / main entry point
-/server.py           # Backend server (Flask or other framework) to connect frontend and backend
-/uom_dao.py          # Unit of Measure data access object
-Setup Instructions
-Install dependencies
+/order.html # Order viewing and creation web page
+/index.html # Homepage / main entry point
+/server.py # Backend server (Flask or other framework) to connect frontend and backend
+/uom_dao.py # Unit of Measure data access object
 
-Python 3.x
-
-Required Python packages (e.g., Flask, MySQL connector) — install via:
-
-bash
+yaml
 Copy
 Edit
-pip install -r requirements.txt
+
+---
+
+## Setup Instructions
+
+1. **Install dependencies**  
+   - Python 3.x  
+   - Required Python packages (e.g., Flask, MySQL connector) — install via:  
+   ```bash
+   pip install -r requirements.txt
 (Create this file if not present with the packages you need)
 
 Database setup
